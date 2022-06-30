@@ -1,21 +1,22 @@
 import Link from "next/link";
-import { MainLayout } from "../components/layouts/MainLayout";
 
-export default function HomePage() {
+import { MainLayout } from "../../components/layouts/MainLayout";
+
+export default function ContactPage() {
   return (
     <MainLayout>
-      <h1>Home Page</h1>
+      <h1>Pricing page</h1>
 
       <h1 className={'title'}>
         Ir a{" "}
-        <Link href="/about" replace>
-          About
+        <Link href="/" replace>
+          Home
         </Link>
       </h1>
 
       <p className={'description'}>
         Get started by editing{" "}
-        <code className={'code'}>pages/index.jsx</code>
+        <code className={'code'}>pages/pricing/index.jsx</code>
       </p>
     </MainLayout>
   );

@@ -1,3 +1,4 @@
+import { FC } from "react";
 import { ActiveLink } from "./ActiveLink";
 import styles from "./Navbar.module.css";
 
@@ -20,7 +21,7 @@ const menuItems = [
   },
 ];
 
-export const Navbar = () => {
+export const Navbar: FC = () => {
   return (
     <div>
       <nav className={styles["menu-container"]}>
